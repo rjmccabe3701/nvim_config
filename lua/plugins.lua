@@ -170,5 +170,12 @@ return {
 		branch = "harpoon2",
 		config = function() require("config.harpoon") end,
 	},
+
+    { 
+	    'numToStr/Comment.nvim',
+	    config = function()
+		    require('Comment').setup()
+	    end
+    },
 }
 
