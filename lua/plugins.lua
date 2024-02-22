@@ -171,11 +171,18 @@ return {
 		config = function() require("config.harpoon") end,
 	},
 
-    { 
-	    'numToStr/Comment.nvim',
-	    config = function()
-		    require('Comment').setup()
-	    end
-    },
+   { 
+      'numToStr/Comment.nvim',
+      config = function()
+         require('Comment').setup()
+      end
+   },
+
+   {
+      "williamboman/mason.nvim",
+      config = function()
+         require('mason').setup()
+      end
+   }
 }
 
