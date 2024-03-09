@@ -42,17 +42,17 @@ return {
 		config = function() require("config.telescope") end,
 	},
 
-	{
-		"kyazdani42/nvim-tree.lua",
-		cmd = "NvimTreeToggle",
-		keys = {
-			{ "tt", "<cmd>NvimTreeToggle<CR>", desc = "Toggle NvimTree" },
-		},
-		dependencies = {
-			"kyazdani42/nvim-web-devicons", -- optional, for file icon
-		},
-		config = function() require("config.nvim-tree") end,
-	},
+	-- {
+	-- 	"kyazdani42/nvim-tree.lua",
+	-- 	cmd = "NvimTreeToggle",
+	-- 	keys = {
+	-- 		{ "tt", "<cmd>NvimTreeToggle<CR>", desc = "Toggle NvimTree" },
+	-- 	},
+	-- 	dependencies = {
+	-- 		"kyazdani42/nvim-web-devicons", -- optional, for file icon
+	-- 	},
+	-- 	config = function() require("config.nvim-tree") end,
+	-- },
 
 	{
 		"nvim-lualine/lualine.nvim",

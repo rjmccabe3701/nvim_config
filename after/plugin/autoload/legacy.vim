@@ -5,9 +5,9 @@ au TextYankPost * silent! lua vim.highlight.on_yank {timeout=500}
 "Easy opening of directories
 " From:
 " http://stackoverflow.com/questions/1708623/opening-files-in-the-same-folder-as-the-current-file-in-vim
-map ,e :e <C-R>=expand("%:p:h") . "/" <CR>
-map ,t :tabe <C-R>=expand("%:p:h") . "/" <CR>
-map ,s :split <C-R>=expand("%:p:h") . "/" <CR>
+" map ,e :e <C-R>=expand("%:p:h") . "/" <CR>
+" map ,t :tabe <C-R>=expand("%:p:h") . "/" <CR>
+" map ,s :split <C-R>=expand("%:p:h") . "/" <CR>
 
 autocmd FileType * setlocal expandtab shiftwidth=3 softtabstop=3
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4

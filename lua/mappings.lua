@@ -89,3 +89,17 @@ function open_help()
 end
 
 map("n", "<C-h>", "<cmd>lua open_help()<CR>", default_options)
+
+-- vim.keymap.set("n", ",e", function()
+--    vim.print('hello')
+--    end)
+vim.keymap.set("n", ",e", function()
+   vim.cmd('e ' .. vim.fn.expand('%:p:h'))
+   end)
+vim.keymap.set("n", ",t", function()
+   vim.cmd('tabe ' .. vim.fn.expand('%:p:h'))
+   end)
+vim.keymap.set("n", ",s", function()
+   vim.cmd('split ' .. vim.fn.expand('%:p:h'))
+   end)
+
