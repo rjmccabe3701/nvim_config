@@ -14,7 +14,7 @@ autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
 autocmd FileType yaml setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd FileType json setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd FileType make setlocal noexpandtab
-autocmd FileType go setlocal noexpandtab
+autocmd FileType go setlocal noexpandtab shiftwidth=4 softtabstop=4 tabstop=4
 autocmd BufRead,BufNewFile Jenkinsfile set filetype=groovy
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
